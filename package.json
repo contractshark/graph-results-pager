@@ -1,31 +1,38 @@
 {
-    "name": "subgraph-results-pager",
-    "version": "1.0.4",
-    "description": "Utility to get paged results from The Graph subgraphs",
-    "main": "index.js",
-    "browser": "browser.js",
-    "dependencies": {
-        "node-fetch": "3.0.0"
-    },
-    "devDependencies": {
-        "webpack": "4.46.0",
-        "webpack-cli": "3.3.9"
-    },
-    "scripts": {
-        "pack": "webpack --mode production",
-        "build": "npm run pack"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/contractshark/graph-results-pager.git"
-    },
-    "keywords": [
-        "thegraprotocol"
-    ],
-    "author": "justin j. moses",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/contractshark/graph-results-pager/issues"
-    },
-    "homepage": "https://github.com/contractshark/graph-results-pager#readme"
+  "name": "subgraph-results-pager",
+  "version": "1.0.4",
+  "description": "Utility to get paged results from The Graph subgraphs",
+  "main": "index.js",
+  "browser": "dist/browser.js",
+  "dependencies": {
+    "node-fetch": "2.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.4",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "2.3.2",
+    "webpack": "4.46.0",
+    "webpack-cli": "3.3.9"
+  },
+  "scripts": {
+    "pack": "NODE_ENV=production npx webpack --mode production",
+    "build": "npm run pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contractshark/graph-results-pager.git"
+  },
+  "keywords": [
+    "thegraprotocol"
+  ],
+  "author": "justin j. moses",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/contractshark/graph-results-pager/issues"
+  },
+  "homepage": "https://github.com/contractshark/graph-results-pager#readme"
 }
