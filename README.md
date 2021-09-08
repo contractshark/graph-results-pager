@@ -1,15 +1,13 @@
-# graph-results-pager
+# subgraph-results-pager
 
-[![npm version](https://badge.fury.io/js/graph-results-pager.svg)](https://badge.fury.io/js/graph-results-pager)
-
-Utility to get paged results from The Graph endpoints
+> Utility to get paged results from The Graph endpoints
 
 ## Node & Webpack Usage
 
 ```javascript
-const graphResultsPager = require('graph-results-pager'); // common js
+const graphResultsPager = require('subgraph-results-pager'); // common js
 // or
-import graphResultsPager from 'graph-results-pager';
+import graphResultsPager from 'subgraph-results-pager';
 
 graphResultsPager({
   api: 'https://api.thegraph.com/subgraphs/name/...',
@@ -44,8 +42,14 @@ For an example in node, try running `node example.js`
 ## Direct browser usage
 
 ```html
-<script src="//cdn.jsdelivr.net/npm/graph-results-pager/browser.js"></script>
+<script src="//cdn.jsdelivr.net/npm/subgraph-results-pager/browser.js"></script>
 <script>
   window.graphResultsPager({...}).then(console.log).catch(console.error)
 </script>
 ```
+
+## License
+
+MIT
+
+Original Author: justin j. moses

@@ -47,7 +47,7 @@ const pageResults = ({
       properties.push('id');
     }
 
-    // mix the page size and skip fields into the selection object
+    // @note mix the page size and skip fields into the selection object
     const selectionObj = Object.assign({}, selection, {
       first,
       orderBy: 'id',
@@ -61,7 +61,7 @@ const pageResults = ({
       selectionObj,
     )}){${properties.join(',')}}}", "variables": null}`;
 
-    // support query logging in nodejs
+    // @dev support query logging in nodejs
     if (typeof process === 'object' && process.env.DEBUG === 'true') {
       console.log(body);
     }
@@ -84,7 +84,7 @@ const pageResults = ({
           data: { [entity]: results },
         } = json;
 
-        // stop if we are on the last page
+        // @note stop if we are on the last page
         if (results.length < pageSize || results.length >= max) {
           if (results.length >= max) {
             return results.slice(0, max);
